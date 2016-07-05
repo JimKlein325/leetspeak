@@ -1,0 +1,13 @@
+<h1>Leetspeak!</h1>
+
+<form action="/speak" method="post">
+  <label for="user-string">Enter some text:</label>
+  <input type="text" name="user-string" id="user-string">
+  <button type="submit" name="button">Submit</button>
+</form>
+
+@if(@Model.Length != 0)
+{
+<p>Your Leetspeak:</p>
+<p>@Model</p>
+}
